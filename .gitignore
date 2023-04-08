@@ -4,6 +4,8 @@
 notebooks/demo_outputs/
 data/
 demo_outputs/
+notebooks/wandb/
+wandb/
 
 *.bundle.*
 lib/
