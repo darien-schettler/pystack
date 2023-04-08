@@ -1,0 +1,23 @@
+{
+    "os": "Linux-5.4.0-146-generic-x86_64-with-glibc2.31",
+    "python": "3.9.16",
+    "heartbeatAt": "2023-04-08T14:48:04.877679",
+    "startedAt": "2023-04-08T14:47:59.597069",
+    "docker": null,
+    "gpu": "NVIDIA RTX A4000",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "home/pystack/notebooks/eda.ipynb",
+    "root": "/home/paperspace/home/pystack",
+    "git": {
+        "remote": "https://github.com/darien-schettler/pystack.git",
+        "commit": "af783fd78c88608a4e47d33f93a2213f8f8d94fa"
+    },
+    "email": "darien_schettler@hotmail.com",
+    "host": "ps6n800vm",
+    "username": "paperspace",
+    "executable": "/usr/local/bin/python"
+}

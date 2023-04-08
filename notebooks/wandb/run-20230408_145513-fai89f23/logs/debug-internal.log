@@ -1,0 +1,718 @@
+2023-04-08 14:55:13,950 INFO    StreamThr :4222 [internal.py:wandb_internal():86] W&B internal server running at pid: 4222, started at: 2023-04-08 14:55:13.950054
+2023-04-08 14:55:13,952 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status
+2023-04-08 14:55:13,955 INFO    WriterThread:4222 [datastore.py:open_for_write():85] open: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/run-fai89f23.wandb
+2023-04-08 14:55:13,956 DEBUG   SenderThread:4222 [sender.py:send():375] send: header
+2023-04-08 14:55:14,009 DEBUG   SenderThread:4222 [sender.py:send():375] send: run
+2023-04-08 14:55:14,175 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: check_version
+2023-04-08 14:55:14,175 INFO    SenderThread:4222 [dir_watcher.py:__init__():219] watching files in: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files
+2023-04-08 14:55:14,176 INFO    SenderThread:4222 [sender.py:_start_run_threads():1124] run started: fai89f23 with start time 1680965713.94949
+2023-04-08 14:55:14,176 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: summary_record
+2023-04-08 14:55:14,176 INFO    SenderThread:4222 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 14:55:14,176 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: check_version
+2023-04-08 14:55:14,274 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: run_start
+2023-04-08 14:55:14,281 DEBUG   HandlerThread:4222 [system_info.py:__init__():31] System info init
+2023-04-08 14:55:14,281 DEBUG   HandlerThread:4222 [system_info.py:__init__():46] System info init done
+2023-04-08 14:55:14,281 INFO    HandlerThread:4222 [system_monitor.py:start():181] Starting system monitor
+2023-04-08 14:55:14,281 INFO    SystemMonitor:4222 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-04-08 14:55:14,281 INFO    HandlerThread:4222 [system_monitor.py:probe():201] Collecting system info
+2023-04-08 14:55:14,283 INFO    SystemMonitor:4222 [interfaces.py:start():190] Started cpu monitoring
+2023-04-08 14:55:14,284 INFO    SystemMonitor:4222 [interfaces.py:start():190] Started disk monitoring
+2023-04-08 14:55:14,284 INFO    SystemMonitor:4222 [interfaces.py:start():190] Started gpu monitoring
+2023-04-08 14:55:14,285 INFO    SystemMonitor:4222 [interfaces.py:start():190] Started memory monitoring
+2023-04-08 14:55:14,286 INFO    SystemMonitor:4222 [interfaces.py:start():190] Started network monitoring
+2023-04-08 14:55:14,292 DEBUG   HandlerThread:4222 [system_info.py:probe():195] Probing system
+2023-04-08 14:55:14,296 DEBUG   HandlerThread:4222 [system_info.py:_probe_git():180] Probing git
+2023-04-08 14:55:14,306 DEBUG   HandlerThread:4222 [system_info.py:_probe_git():188] Probing git done
+2023-04-08 14:55:14,306 DEBUG   HandlerThread:4222 [system_info.py:probe():240] Probing system done
+2023-04-08 14:55:14,306 DEBUG   HandlerThread:4222 [system_monitor.py:probe():210] {'os': 'Linux-5.4.0-146-generic-x86_64-with-glibc2.31', 'python': '3.9.16', 'heartbeatAt': '2023-04-08T14:55:14.292197', 'startedAt': '2023-04-08T14:55:13.943184', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'home/pystack/notebooks/eda.ipynb', 'root': '/home/paperspace/home/pystack', 'git': {'remote': 'https://github.com/darien-schettler/pystack.git', 'commit': 'af783fd78c88608a4e47d33f93a2213f8f8d94fa'}, 'email': 'darien_schettler@hotmail.com', 'host': 'ps6n800vm', 'username': 'paperspace', 'executable': '/usr/local/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3202.1379999999995, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3202.138, 'min': 0.0, 'max': 0.0}, {'current': 3202.138, 'min': 0.0, 'max': 0.0}, {'current': 3202.138, 'min': 0.0, 'max': 0.0}, {'current': 3202.138, 'min': 0.0, 'max': 0.0}, {'current': 3202.138, 'min': 0.0, 'max': 0.0}, {'current': 3202.138, 'min': 0.0, 'max': 0.0}, {'current': 3202.138, 'min': 0.0, 'max': 0.0}, {'current': 3202.138, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 1968.4833221435547, 'used': 429.80115509033203}, 'gpu': 'NVIDIA RTX A4000', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA RTX A4000', 'memory_total': 17171480576}], 'memory': {'total': 44.101985931396484}}
+2023-04-08 14:55:14,307 INFO    HandlerThread:4222 [system_monitor.py:probe():211] Finished collecting system info
+2023-04-08 14:55:14,307 INFO    HandlerThread:4222 [system_monitor.py:probe():214] Publishing system info
+2023-04-08 14:55:14,307 DEBUG   HandlerThread:4222 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-08 14:55:14,307 DEBUG   HandlerThread:4222 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-08 14:55:14,308 INFO    HandlerThread:4222 [system_monitor.py:probe():216] Finished publishing system info
+2023-04-08 14:55:14,313 DEBUG   SenderThread:4222 [sender.py:send():375] send: files
+2023-04-08 14:55:14,314 INFO    SenderThread:4222 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-04-08 14:55:14,324 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 14:55:14,324 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 14:55:14,395 DEBUG   SenderThread:4222 [sender.py:send():375] send: telemetry
+2023-04-08 14:55:14,679 INFO    wandb-upload_0:4222 [upload_job.py:push():137] Uploaded file /tmp/tmpaubou8ygwandb/8t813uxy-wandb-metadata.json
+2023-04-08 14:55:15,177 INFO    Thread-12 :4222 [dir_watcher.py:_on_file_created():278] file/dir created: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/wandb-summary.json
+2023-04-08 14:55:15,178 INFO    Thread-12 :4222 [dir_watcher.py:_on_file_created():278] file/dir created: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/requirements.txt
+2023-04-08 14:55:15,178 INFO    Thread-12 :4222 [dir_watcher.py:_on_file_created():278] file/dir created: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/output.log
+2023-04-08 14:55:15,178 INFO    Thread-12 :4222 [dir_watcher.py:_on_file_created():278] file/dir created: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/wandb-metadata.json
+2023-04-08 14:55:17,177 INFO    Thread-12 :4222 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/output.log
+2023-04-08 14:55:19,397 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:55:24,398 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:55:29,324 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 14:55:29,324 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 14:55:30,382 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:55:35,383 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:55:40,384 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:55:44,324 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 14:55:44,325 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 14:55:46,383 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:55:47,187 INFO    Thread-12 :4222 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/config.yaml
+2023-04-08 14:55:51,473 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:55:56,474 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:55:59,324 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 14:55:59,325 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 14:56:02,377 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:56:07,378 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:56:12,380 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:56:14,287 DEBUG   SystemMonitor:4222 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-04-08 14:56:14,288 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 14:56:14,324 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 14:56:14,325 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 14:56:17,381 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:56:22,382 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:56:27,383 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:56:29,325 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-08 14:56:29,325 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: stop_status
+2023-04-08 14:56:33,380 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 14:56:33,647 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: log_artifact
+2023-04-08 14:56:33,648 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: log_artifact
+2023-04-08 14:56:34,673 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-08 14:56:34,904 INFO    wandb-upload_2:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmplnr7vrs2
+2023-04-08 14:56:34,943 INFO    wandb-upload_0:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpx2xvqc6y
+2023-04-08 14:56:35,205 INFO    Thread-12 :4222 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/output.log
+2023-04-08 14:56:36,466 INFO    wandb-upload_1:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp6awby_dm
+2023-04-08 14:56:39,654 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:56:44,655 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:56:49,656 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:56:54,657 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:56:59,658 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:04,659 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:09,660 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:14,661 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:19,662 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:24,664 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:29,665 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:34,666 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:39,667 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:44,668 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:49,669 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:54,670 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:57:59,671 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:04,673 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:09,674 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:14,675 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:19,676 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:24,677 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:29,678 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:34,679 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:39,680 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:44,681 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:49,682 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:54,683 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:58:59,684 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:04,686 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:09,687 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:14,688 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:19,689 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:24,691 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:29,692 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:34,693 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:39,694 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:44,695 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:49,696 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:54,697 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 14:59:59,698 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:04,699 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:09,701 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:14,702 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:19,703 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:24,704 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:29,705 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:34,706 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:39,708 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:44,709 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:49,710 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:54,711 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:00:59,712 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:04,713 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:09,714 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:14,715 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:19,717 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:24,718 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:29,719 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:34,720 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:39,721 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:44,722 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:49,723 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:54,724 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:01:59,725 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:04,726 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:09,728 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:14,729 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:19,730 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:24,731 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:29,732 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:34,734 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:39,735 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:44,736 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:49,737 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:54,738 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:02:59,739 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:04,740 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:09,741 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:14,742 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:19,743 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:24,744 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:29,746 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:34,747 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:39,748 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:44,749 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:49,750 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:54,751 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:03:59,752 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:04,753 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:09,754 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:14,756 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:19,757 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:24,758 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:29,759 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:34,760 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:39,761 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:44,762 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:49,763 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:54,765 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:04:59,766 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:04,767 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:09,768 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:14,769 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:19,770 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:24,771 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:29,773 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:34,774 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:39,775 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:44,776 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:49,777 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:54,778 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:05:59,779 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:04,780 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:09,781 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:14,782 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:19,784 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:24,785 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:29,786 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:34,787 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:39,788 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:44,789 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:49,790 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:54,791 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:06:59,792 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:04,793 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:09,794 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:14,796 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:19,797 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:24,798 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:29,799 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:34,800 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:39,801 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:44,803 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:49,804 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:54,805 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:07:59,806 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:04,807 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:09,808 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:14,809 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:19,810 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:24,811 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:29,812 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:34,813 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:39,815 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:44,816 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:49,817 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:54,818 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:08:55,458 INFO    wandb-upload_35:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp_3xlckzm
+2023-04-08 15:08:59,819 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:02,263 INFO    wandb-upload_58:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpnc2fke04
+2023-04-08 15:09:03,216 INFO    wandb-upload_11:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpj5nrl3bi
+2023-04-08 15:09:04,820 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:09,821 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:12,757 INFO    wandb-upload_7:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp6t99tgyn
+2023-04-08 15:09:14,823 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:19,824 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:24,825 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:27,390 INFO    wandb-upload_51:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmptnsmz86l
+2023-04-08 15:09:29,826 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:34,827 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:39,081 INFO    wandb-upload_29:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpltukwyvk
+2023-04-08 15:09:39,828 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:44,829 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:49,831 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:54,831 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:09:59,833 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:02,013 INFO    wandb-upload_6:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpx323rql3
+2023-04-08 15:10:04,834 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:09,835 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:14,836 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:19,837 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:24,838 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:29,839 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:34,840 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:34,940 INFO    wandb-upload_36:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp5cf__imu
+2023-04-08 15:10:39,841 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:40,080 INFO    wandb-upload_63:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpwfztzi9f
+2023-04-08 15:10:40,386 INFO    wandb-upload_44:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpqjx9pa6g
+2023-04-08 15:10:42,098 INFO    wandb-upload_37:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpa64gty_w
+2023-04-08 15:10:44,842 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:47,580 INFO    wandb-upload_45:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpt7jptxm4
+2023-04-08 15:10:49,844 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:50,357 INFO    wandb-upload_31:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpxwb8myst
+2023-04-08 15:10:53,002 INFO    wandb-upload_26:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpa8brpmc0
+2023-04-08 15:10:54,844 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:10:56,185 INFO    wandb-upload_17:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp9jpxrlhy
+2023-04-08 15:10:59,845 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:04,846 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:06,038 INFO    wandb-upload_23:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpksh5198e
+2023-04-08 15:11:06,109 INFO    wandb-upload_28:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpeaeaax2j
+2023-04-08 15:11:06,885 INFO    wandb-upload_3:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpaplpq42h
+2023-04-08 15:11:08,954 INFO    wandb-upload_30:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpz0551p_k
+2023-04-08 15:11:09,455 INFO    wandb-upload_60:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmprjxryrqn
+2023-04-08 15:11:09,848 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:11,970 INFO    wandb-upload_54:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpgyey8snu
+2023-04-08 15:11:12,730 INFO    wandb-upload_39:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmprt9nw96o
+2023-04-08 15:11:13,463 INFO    wandb-upload_27:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmplp3v2p4s
+2023-04-08 15:11:14,849 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:18,943 INFO    wandb-upload_2:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp4i4tb6kn
+2023-04-08 15:11:19,850 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:24,851 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:29,550 INFO    wandb-upload_15:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp5sn16nhh
+2023-04-08 15:11:29,852 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:31,813 INFO    wandb-upload_16:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp4318fqkf
+2023-04-08 15:11:33,992 INFO    wandb-upload_48:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpwrs531oe
+2023-04-08 15:11:34,853 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:34,916 INFO    wandb-upload_38:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp5tn6k41n
+2023-04-08 15:11:36,131 INFO    wandb-upload_41:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmprbdgpy1s
+2023-04-08 15:11:39,854 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:41,238 INFO    wandb-upload_9:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpua5yfchg
+2023-04-08 15:11:44,660 INFO    wandb-upload_4:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpxrvaaxgl
+2023-04-08 15:11:44,855 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:45,252 INFO    wandb-upload_40:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpwm9ux26_
+2023-04-08 15:11:46,967 INFO    wandb-upload_21:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpgksyono6
+2023-04-08 15:11:49,856 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:51,637 INFO    wandb-upload_47:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpbh8wbxbf
+2023-04-08 15:11:54,857 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:57,606 INFO    wandb-upload_19:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp0_hvfkds
+2023-04-08 15:11:58,775 INFO    wandb-upload_55:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp343livf7
+2023-04-08 15:11:58,802 INFO    wandb-upload_22:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp6ozasbyh
+2023-04-08 15:11:59,859 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:11:59,969 INFO    wandb-upload_33:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpczugsvz2
+2023-04-08 15:12:01,443 INFO    wandb-upload_53:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpu4fk9wb8
+2023-04-08 15:12:04,142 INFO    wandb-upload_0:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp0ic_k6xf
+2023-04-08 15:12:04,601 INFO    wandb-upload_34:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp329uf3ix
+2023-04-08 15:12:04,860 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:12:05,972 INFO    wandb-upload_12:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpxge6skth
+2023-04-08 15:12:09,860 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:12:11,094 INFO    wandb-upload_50:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp5od3cc0m
+2023-04-08 15:12:12,295 INFO    wandb-upload_62:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpn8gweocp
+2023-04-08 15:12:14,862 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:12:19,298 INFO    wandb-upload_52:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp_ehf5bz6
+2023-04-08 15:12:19,863 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:12:22,526 INFO    wandb-upload_18:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpck9eziqw
+2023-04-08 15:12:23,474 INFO    wandb-upload_59:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp_s1p4fpq
+2023-04-08 15:12:24,864 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:12:27,393 INFO    wandb-upload_61:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpari8o_4c
+2023-04-08 15:12:27,696 INFO    wandb-upload_56:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpzcs5ioxy
+2023-04-08 15:12:28,681 INFO    wandb-upload_46:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpy59e8wjn
+2023-04-08 15:12:29,243 INFO    wandb-upload_1:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpy3kmoni3
+2023-04-08 15:12:29,865 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:12:30,291 INFO    wandb-upload_43:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp4baq3ohl
+2023-04-08 15:12:33,319 INFO    wandb-upload_42:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpwkk68n0d
+2023-04-08 15:12:34,321 INFO    wandb-upload_49:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp95qukjke
+2023-04-08 15:12:34,866 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:12:35,388 INFO    wandb-upload_20:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpjqvkkd88
+2023-04-08 15:12:39,867 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:12:40,471 INFO    wandb-upload_10:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpkv3t3b78
+2023-04-08 15:12:42,464 INFO    wandb-upload_24:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpd50ssm13
+2023-04-08 15:12:44,868 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:12:45,869 INFO    wandb-upload_13:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp8dhanbvo
+2023-04-08 15:12:49,869 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:12:50,959 INFO    wandb-upload_57:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpygz2o_wx
+2023-04-08 15:12:54,572 INFO    wandb-upload_14:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpk0femii6
+2023-04-08 15:12:54,870 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:12:59,871 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:01,866 INFO    wandb-upload_32:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmphkrupxbs
+2023-04-08 15:13:04,872 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:06,633 INFO    wandb-upload_5:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpnlps20s6
+2023-04-08 15:13:09,873 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:11,997 INFO    wandb-upload_25:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpen7oq4fe
+2023-04-08 15:13:14,874 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:19,875 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:24,876 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:28,147 INFO    wandb-upload_8:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpuopobbgl
+2023-04-08 15:13:29,877 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:34,879 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:39,880 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:44,881 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:49,882 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:54,883 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:13:59,884 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:04,885 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:09,886 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:14,887 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:19,889 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:24,890 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:29,891 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:34,892 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:39,893 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:44,895 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:49,896 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:54,897 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:14:59,898 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:04,899 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:09,900 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:14,901 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:19,902 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:24,903 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:29,904 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:34,905 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:39,907 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:44,908 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:49,909 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:53,620 INFO    wandb-upload_11:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpg_p07yud
+2023-04-08 15:15:54,910 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:15:59,911 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:04,912 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:09,913 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:14,914 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:19,915 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:24,916 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:29,917 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:34,918 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:39,919 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:40,886 INFO    wandb-upload_35:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpv236y2ka
+2023-04-08 15:16:44,920 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:49,921 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:54,922 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:16:59,923 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:02,076 INFO    wandb-upload_7:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpbujijw0s
+2023-04-08 15:17:02,680 INFO    wandb-upload_58:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpdo2q54r7
+2023-04-08 15:17:04,925 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:06,331 INFO    wandb-upload_2:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp2mz9ru95
+2023-04-08 15:17:07,821 INFO    wandb-upload_51:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp75kgz3ma
+2023-04-08 15:17:09,926 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:14,927 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:17,358 INFO    wandb-upload_29:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp4nn225ji
+2023-04-08 15:17:19,928 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:24,929 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:29,930 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:34,931 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:37,465 INFO    wandb-upload_6:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpl6yaj704
+2023-04-08 15:17:39,932 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:44,933 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:44,942 INFO    wandb-upload_21:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp3_z1dyx7
+2023-04-08 15:17:49,935 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:54,936 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:17:59,937 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:04,938 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:09,939 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:14,940 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:15,966 INFO    wandb-upload_0:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpt9d4lban
+2023-04-08 15:18:19,941 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:24,057 INFO    wandb-upload_56:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpvqzvnt2i
+2023-04-08 15:18:24,943 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:29,944 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:34,945 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:39,946 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:39,966 INFO    wandb-upload_21:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpjhvurvfw
+2023-04-08 15:18:41,106 INFO    wandb-upload_1:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpsew3hqyr
+2023-04-08 15:18:44,947 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:49,948 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:54,949 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:18:59,950 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:04,951 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:09,953 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:14,954 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:19,955 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:24,956 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:29,957 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:34,959 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:39,960 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:44,961 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:49,962 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:54,963 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:19:59,964 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:04,965 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:09,966 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:14,967 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:19,969 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:24,970 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:27,935 INFO    wandb-upload_11:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpzj8cuhlf
+2023-04-08 15:20:29,971 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:34,972 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:39,973 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:44,974 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:49,975 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:54,976 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:20:59,977 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:03,855 INFO    wandb-upload_2:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpujhp_0no
+2023-04-08 15:21:04,979 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:09,980 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:14,981 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:18,308 INFO    wandb-upload_35:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp7ngmxm9c
+2023-04-08 15:21:19,982 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:24,983 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:28,852 INFO    wandb-upload_27:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmptn4ey_nq
+2023-04-08 15:21:29,984 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:32,786 INFO    wandb-upload_45:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpd61h03ls
+2023-04-08 15:21:34,985 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:35,939 INFO    wandb-upload_39:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpjv8gl3xp
+2023-04-08 15:21:37,243 INFO    wandb-upload_26:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp96akvj3u
+2023-04-08 15:21:39,986 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:44,987 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:47,217 INFO    wandb-upload_55:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpr1st4nwn
+2023-04-08 15:21:49,988 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:54,989 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:21:59,990 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:01,500 INFO    wandb-upload_58:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp915ebrhm
+2023-04-08 15:22:01,916 INFO    wandb-upload_37:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpmzrcgi7d
+2023-04-08 15:22:04,116 INFO    wandb-upload_54:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmponrsbo_x
+2023-04-08 15:22:04,991 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:06,270 INFO    wandb-upload_4:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpp84c_o77
+2023-04-08 15:22:08,276 INFO    wandb-upload_6:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpjs4tkdl3
+2023-04-08 15:22:09,992 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:10,977 INFO    wandb-upload_22:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpigb61qk7
+2023-04-08 15:22:12,807 INFO    wandb-upload_53:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpu33pmv4v
+2023-04-08 15:22:13,126 INFO    wandb-upload_36:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp7yzvg4ns
+2023-04-08 15:22:13,182 INFO    wandb-upload_50:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp2gwcws13
+2023-04-08 15:22:14,793 INFO    wandb-upload_3:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpnhz156wm
+2023-04-08 15:22:14,993 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:15,824 INFO    wandb-upload_51:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpuy_hhtn2
+2023-04-08 15:22:18,522 INFO    wandb-upload_32:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpzkfk_uqu
+2023-04-08 15:22:19,994 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:22,317 INFO    wandb-upload_9:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpznal2fs5
+2023-04-08 15:22:23,867 INFO    wandb-upload_62:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpbqlukh2f
+2023-04-08 15:22:24,995 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:29,996 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:31,954 INFO    wandb-upload_7:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp36cpjdsh
+2023-04-08 15:22:32,737 INFO    wandb-upload_16:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpwtasatnw
+2023-04-08 15:22:33,501 INFO    wandb-upload_29:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpv4dg_kf5
+2023-04-08 15:22:33,845 INFO    wandb-upload_63:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpdr6d4a29
+2023-04-08 15:22:34,997 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:36,679 INFO    wandb-upload_41:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp0acimuh1
+2023-04-08 15:22:38,348 INFO    wandb-upload_59:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpr5vaj59u
+2023-04-08 15:22:39,998 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:40,189 INFO    wandb-upload_47:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmprpe46rlt
+2023-04-08 15:22:41,178 INFO    wandb-upload_43:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpqroa4cky
+2023-04-08 15:22:41,349 INFO    wandb-upload_15:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpravy9pmq
+2023-04-08 15:22:42,197 INFO    wandb-upload_20:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp22_x60nh
+2023-04-08 15:22:43,844 INFO    wandb-upload_33:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp20c_rsf5
+2023-04-08 15:22:44,994 INFO    wandb-upload_57:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp9v6vikss
+2023-04-08 15:22:45,000 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:46,118 INFO    wandb-upload_30:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp18klae_p
+2023-04-08 15:22:47,837 INFO    wandb-upload_46:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpyj2gt4oa
+2023-04-08 15:22:50,001 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:51,453 INFO    wandb-upload_52:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp0rz2oh0d
+2023-04-08 15:22:52,707 INFO    wandb-upload_25:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp6p1f31ql
+2023-04-08 15:22:52,912 INFO    wandb-upload_60:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp9l0gvhol
+2023-04-08 15:22:53,401 INFO    wandb-upload_12:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp21zvq8i4
+2023-04-08 15:22:53,615 INFO    wandb-upload_17:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp7hewraky
+2023-04-08 15:22:55,002 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:22:56,392 INFO    wandb-upload_48:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp51h87e97
+2023-04-08 15:22:56,846 INFO    wandb-upload_18:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp3w4yj8gn
+2023-04-08 15:22:58,185 INFO    wandb-upload_28:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpt6j7ul84
+2023-04-08 15:22:59,681 INFO    wandb-upload_34:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpmc03pwk5
+2023-04-08 15:23:00,003 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:23:02,026 INFO    wandb-upload_40:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp1_if0ow4
+2023-04-08 15:23:02,205 INFO    wandb-upload_38:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpihdnbysa
+2023-04-08 15:23:02,405 INFO    wandb-upload_44:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpajo0isv9
+2023-04-08 15:23:05,004 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:23:06,068 INFO    wandb-upload_14:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpzxplu0dr
+2023-04-08 15:23:07,634 INFO    wandb-upload_13:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpvi_2emuc
+2023-04-08 15:23:10,005 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:23:13,135 INFO    wandb-upload_49:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpwoj5kri7
+2023-04-08 15:23:13,322 INFO    wandb-upload_61:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpnszqc554
+2023-04-08 15:23:13,846 INFO    wandb-upload_23:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpx0bd2ztb
+2023-04-08 15:23:15,006 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:23:16,274 INFO    wandb-upload_42:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmp910692lz
+2023-04-08 15:23:16,727 INFO    wandb-upload_10:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpcybq9gvp
+2023-04-08 15:23:19,283 INFO    wandb-upload_8:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpt8344bkj
+2023-04-08 15:23:20,007 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:23:24,262 INFO    wandb-upload_19:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpiwcfgy04
+2023-04-08 15:23:25,008 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:23:26,635 INFO    wandb-upload_24:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpm2v_skim
+2023-04-08 15:23:27,849 INFO    wandb-upload_31:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpu11qisl_
+2023-04-08 15:23:30,009 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:23:34,154 INFO    wandb-upload_5:4222 [upload_job.py:push():95] Uploaded file /home/paperspace/.local/share/wandb/artifacts/staging/tmpbft7vvdi
+2023-04-08 15:23:35,010 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-08 15:23:36,975 INFO    SenderThread:4222 [sender.py:send_request_log_artifact():1438] logged artifact bigcode-thestack-dedup-python-only - {'id': 'QXJ0aWZhY3Q6NDE4MDI5MzI1', 'digest': '1d8414ea4ec2c0b6f691f2bba44ba52c', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYxNDEwNjE5', 'latestArtifact': None}, 'version': 'latest'}
+2023-04-08 15:23:36,975 DEBUG   SenderThread:4222 [sender.py:send():375] send: telemetry
+2023-04-08 15:23:36,975 DEBUG   SenderThread:4222 [sender.py:send():375] send: exit
+2023-04-08 15:23:36,976 INFO    SenderThread:4222 [sender.py:send_exit():598] handling exit code: 0
+2023-04-08 15:23:36,976 INFO    SenderThread:4222 [sender.py:send_exit():600] handling runtime: 79
+2023-04-08 15:23:36,977 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 15:23:36,978 INFO    SenderThread:4222 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 15:23:36,978 INFO    SenderThread:4222 [sender.py:send_exit():606] send defer
+2023-04-08 15:23:36,978 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: poll_exit
+2023-04-08 15:23:36,978 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:36,978 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 0
+2023-04-08 15:23:36,978 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,979 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,979 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,979 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,979 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,979 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,979 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,979 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,979 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,979 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,980 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,980 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,980 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,980 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,980 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,980 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,980 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,980 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,981 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,981 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,981 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,981 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,981 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,981 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,981 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,981 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,982 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,982 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,982 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,982 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,982 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,982 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,982 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,982 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,982 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,983 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,983 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,983 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,983 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,983 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,983 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,983 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,983 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,984 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,984 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,984 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,984 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,984 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,984 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,984 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,984 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,984 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,985 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,985 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:36,985 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:36,985 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-04-08 15:23:36,985 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 1
+2023-04-08 15:23:36,985 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:36,985 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 1
+2023-04-08 15:23:36,985 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:36,985 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-04-08 15:23:36,985 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 2
+2023-04-08 15:23:36,985 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:36,986 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 2
+2023-04-08 15:23:36,986 INFO    HandlerThread:4222 [system_monitor.py:finish():190] Stopping system monitor
+2023-04-08 15:23:36,986 DEBUG   SystemMonitor:4222 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-04-08 15:23:36,986 DEBUG   SystemMonitor:4222 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-04-08 15:23:36,987 INFO    HandlerThread:4222 [interfaces.py:finish():202] Joined cpu monitor
+2023-04-08 15:23:36,987 INFO    HandlerThread:4222 [interfaces.py:finish():202] Joined disk monitor
+2023-04-08 15:23:37,009 INFO    HandlerThread:4222 [interfaces.py:finish():202] Joined gpu monitor
+2023-04-08 15:23:37,009 INFO    HandlerThread:4222 [interfaces.py:finish():202] Joined memory monitor
+2023-04-08 15:23:37,009 INFO    HandlerThread:4222 [interfaces.py:finish():202] Joined network monitor
+2023-04-08 15:23:37,010 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:37,010 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-04-08 15:23:37,010 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 3
+2023-04-08 15:23:37,010 DEBUG   SenderThread:4222 [sender.py:send():375] send: stats
+2023-04-08 15:23:37,010 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:37,010 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 3
+2023-04-08 15:23:37,010 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:37,010 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-04-08 15:23:37,010 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 4
+2023-04-08 15:23:37,010 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:37,010 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 4
+2023-04-08 15:23:37,011 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:37,011 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-04-08 15:23:37,011 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 5
+2023-04-08 15:23:37,011 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:37,011 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 5
+2023-04-08 15:23:37,011 DEBUG   SenderThread:4222 [sender.py:send():375] send: summary
+2023-04-08 15:23:37,011 INFO    SenderThread:4222 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-08 15:23:37,011 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:37,011 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-04-08 15:23:37,011 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 6
+2023-04-08 15:23:37,012 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:37,012 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 6
+2023-04-08 15:23:37,012 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:37,012 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-04-08 15:23:37,015 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: status_report
+2023-04-08 15:23:37,107 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 7
+2023-04-08 15:23:37,108 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:37,108 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 7
+2023-04-08 15:23:37,108 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:37,108 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-04-08 15:23:37,736 INFO    Thread-12 :4222 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/wandb-summary.json
+2023-04-08 15:23:37,737 INFO    Thread-12 :4222 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/config.yaml
+2023-04-08 15:23:38,338 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 8
+2023-04-08 15:23:38,338 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:38,338 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 8
+2023-04-08 15:23:38,339 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:38,339 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-04-08 15:23:38,339 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 9
+2023-04-08 15:23:38,340 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:38,340 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 9
+2023-04-08 15:23:38,340 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:38,340 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-04-08 15:23:38,340 INFO    SenderThread:4222 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-04-08 15:23:38,737 INFO    Thread-12 :4222 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/output.log
+2023-04-08 15:23:38,738 INFO    SenderThread:4222 [dir_watcher.py:finish():395] scan: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files
+2023-04-08 15:23:38,738 INFO    SenderThread:4222 [dir_watcher.py:finish():409] scan save: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/config.yaml config.yaml
+2023-04-08 15:23:38,738 INFO    SenderThread:4222 [dir_watcher.py:finish():409] scan save: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/requirements.txt requirements.txt
+2023-04-08 15:23:38,738 INFO    SenderThread:4222 [dir_watcher.py:finish():409] scan save: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/output.log output.log
+2023-04-08 15:23:38,741 INFO    SenderThread:4222 [dir_watcher.py:finish():409] scan save: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/wandb-summary.json wandb-summary.json
+2023-04-08 15:23:38,744 INFO    SenderThread:4222 [dir_watcher.py:finish():409] scan save: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/wandb-metadata.json wandb-metadata.json
+2023-04-08 15:23:38,744 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 10
+2023-04-08 15:23:38,745 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:38,750 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 10
+2023-04-08 15:23:38,750 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:38,750 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-04-08 15:23:38,750 INFO    SenderThread:4222 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-08 15:23:39,026 INFO    wandb-upload_0:4222 [upload_job.py:push():137] Uploaded file /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/config.yaml
+2023-04-08 15:23:39,081 INFO    wandb-upload_1:4222 [upload_job.py:push():137] Uploaded file /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/output.log
+2023-04-08 15:23:39,180 INFO    wandb-upload_21:4222 [upload_job.py:push():137] Uploaded file /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/requirements.txt
+2023-04-08 15:23:39,190 INFO    wandb-upload_11:4222 [upload_job.py:push():137] Uploaded file /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/files/wandb-summary.json
+2023-04-08 15:23:39,390 INFO    Thread-11 :4222 [sender.py:transition_state():626] send defer: 11
+2023-04-08 15:23:39,391 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:39,391 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 11
+2023-04-08 15:23:39,391 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:39,391 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-04-08 15:23:39,392 INFO    SenderThread:4222 [file_pusher.py:join():173] waiting for file pusher
+2023-04-08 15:23:39,392 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 12
+2023-04-08 15:23:39,392 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:39,392 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 12
+2023-04-08 15:23:39,392 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:39,392 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-04-08 15:23:39,787 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 13
+2023-04-08 15:23:39,787 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:39,787 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 13
+2023-04-08 15:23:39,787 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:39,787 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-04-08 15:23:39,787 INFO    SenderThread:4222 [sender.py:transition_state():626] send defer: 14
+2023-04-08 15:23:39,787 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: defer
+2023-04-08 15:23:39,787 INFO    HandlerThread:4222 [handler.py:handle_request_defer():170] handle defer: 14
+2023-04-08 15:23:39,788 DEBUG   SenderThread:4222 [sender.py:send():375] send: final
+2023-04-08 15:23:39,788 DEBUG   SenderThread:4222 [sender.py:send():375] send: footer
+2023-04-08 15:23:39,788 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: defer
+2023-04-08 15:23:39,788 INFO    SenderThread:4222 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-04-08 15:23:39,789 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-08 15:23:39,789 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: server_info
+2023-04-08 15:23:39,789 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: get_summary
+2023-04-08 15:23:39,789 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: sampled_history
+2023-04-08 15:23:39,790 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: poll_exit
+2023-04-08 15:23:39,790 DEBUG   SenderThread:4222 [sender.py:send_request():402] send_request: server_info
+2023-04-08 15:23:39,832 DEBUG   HandlerThread:4222 [handler.py:handle_request():144] handle_request: shutdown
+2023-04-08 15:23:39,832 INFO    HandlerThread:4222 [handler.py:finish():845] shutting down handler
+2023-04-08 15:23:40,790 INFO    WriterThread:4222 [datastore.py:close():298] close: /home/paperspace/home/pystack/notebooks/wandb/run-20230408_145513-fai89f23/run-fai89f23.wandb
+2023-04-08 15:23:40,832 INFO    SenderThread:4222 [sender.py:finish():1550] shutting down sender
+2023-04-08 15:23:40,832 INFO    SenderThread:4222 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-08 15:23:40,832 INFO    SenderThread:4222 [file_pusher.py:join():173] waiting for file pusher
